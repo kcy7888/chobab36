@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title>chobab</title>
+
+ <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+<meta charset="utf-8">
+<style>
+
+body {
+  margin: inherit;
+}
+</style>
+</head>
+
+<body style="background-color: #a9a9a9;">
+
+
+
+    <div class="window" style="margin: 32px; width: 283px">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          Welcome to my 엑스형's Webpage
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>Go back to 2005?</p>
+        <section class="field-row" style="justify-content: flex-end">
+          <a href = "mainpage.html"><button>OK</button>
+          <button><a href="index.html">Cancel</a></button>
+        </section>
+
+    </div>
+
+    
+
+    <script>
+        var lines = {
+          "1" : "명찰 -2 웃기니까 +2 ㅋㅋ몰라 +10",
+          "2" : "너 2개국어 하니 쟤는 해 새겨 들어.",
+          "3" : "이쀼리들 헤쳐 모여.",
+          "4" : "인순이형 참으세요! 또 정학당하면 어쩌려고 그래요.",
+          "5" : "우리 학교에서 유일하게 영어 스펠링 명찰단 형.",
+          "6" : "난 발기맛이 제일 좋아요. 형을 떠올리게 하니까요. 발기처럼 달콤한 핑크빛 제 마음이 느껴져요?",
+          "7" : "우리 인준이 한테 마크가 있어서 다행이야.",
+          "8" : "좀만 일찍 고백하지.\n왜?\n내 글 여주 모델을 너로 삼을걸",
+          "9" : "영어 1등급 받겠다고.",
+          "10" : "그러니까 철수야. 철수같이 굴지 마.",
+          "11" : "난 발기맛이 제일 좋아요. 형을 떠올리게 하니까요. 발기처럼 달콤한 핑크빛 제 마음이 느껴져요?",
+          "12" : "알 좀 빌려줘. 쌈마야.",
+          "13" : "이동혁이 여기 없는 걸 감사해.\n그리고 오르지도 못할 자리\n넘보지 마. 떨어질라.",
+          "14" : "인준아. 형은 너희 집에서.\n형 집이에요.",
+          "15" : "야 황.",
+          "16" : "인준아. 난 너 좋아. 헛소리에 놀아나지 않아서. 없는 권력에 기생하지 않아서. 그러니까 널 구제해줄 사람은 너밖에 없어.",
+          "17" : "난 콜라 대신 오렌지 주스잖아.",
+          "18" : "이동혁은 미친 듯이 내 위로 계속 기어 올라왔다.\n처절할 정도로 맹목적이었다.\n네가 지킬 수는 있냐던 빈정을 행동으로 반박했다.",
+          "19" : "요맨큼 빼고 전부 다.",
+          "20" : "나는 형을 사랑해. 나는 나재민을 사랑해. 나는 이제노를 사랑해.\n나는 이동혁을.",
+          "21" : "그럼 또 어쩔 건데.\n사랑은 다 소용없어. 내가 인터넷 소설만 봤어도 이건 알아.\n나중에 가면 다 헛짓이야. 쓸데없는 봉사고 적선이고 동정이라고.\n사랑이면 그 짓이 미화될 것 같아? 나중에 땅을 치고 후회해.\n아무 탈 없는 인간이나 만나서 행복하게 살아야 할 거 아냐. 캐나다 여권들고 떠나야 할 거 아냐.\n무슨 꼴 보겠다고 조센징. 그래 씨발 조센징 좆만한 땅에 비비고 살어. 형 미쳤어?",
+          "22" : "동혁이네 가면 나도 동글이가 된 것 같아.",
+          "23" : "형은 형이지. 형이 누구 꺼가 되고 말고가 어딨어요.",
+          "24" : "그러니까 철수야. 철수같이 굴지 마.",
+          "25" : "난 발기맛이 제일 좋아요. 형을 떠올리게 하니까요. 발기처럼 달콤한 핑크빛 제 마음이 느껴져요?",
+          "26" : "알 좀 빌려줘. 쌈마야.",
+          "27" : "이동혁이 여기 없는 걸 감사해.\n그리고 오르지도 못할 자리\n넘보지 마. 떨어질라.",
+          "28" : "인준아. 형은 너희 집에서.\n형 집이에요.",
+          "29" : "야 황."
+        };
+        </script>
+  
+        <script>
+        var randomProperty = function (lines) {
+          var keys = Object.keys(lines);
+          return lines[keys[Math.floor(keys.length * Math.random())]];
+          <!-- -->
+      };
+  
+        </script>
+  
+  
+  
+      <script>
+      function catchedAlert(){
+        alert(random3Property(lines));
+      }
+      </script>
+  
+      <button onclick = "catchedAlert()"> 눌러보세요 </button>
+      <!---->
+  
+      <!---->
+      <script>
+        var random3Property = function (keywords) {
+          var keys = Object.keys(keywords)
+          var valueArray = new Array();
+          valueArray[0] = keywords[keys[Math.floor(Math.random() * 10)]];
+          valueArray[1] = keywords[keys[Math.floor(Math.random() * 20)]];
+          valueArray[2] = keywords[keys[Math.floor(Math.random() * 30)]];
+          return valueArray
+        };
+      </script>
+
+</body>
