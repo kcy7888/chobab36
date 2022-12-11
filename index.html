@@ -160,9 +160,13 @@ body {
         var random3Property = function (keywords) {
           var keys = Object.keys(keywords)
           var valueArray = new Array();
-          valueArray[0] = keywords[keys[Math.floor(Math.random() * 30)]];
-          valueArray[1] = keywords[keys[Math.floor(Math.random() * 60)]];
-          valueArray[2] = keywords[keys[Math.floor(Math.random() * 90)]];
+         
+         function rand(min, max) {
+         return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+          valueArray[0] = keywords[keys[document.writeln(rand(1, 30));]];
+          valueArray[1] = keywords[keys[document.writeln(rand(31, 60));]];
+          valueArray[2] = keywords[keys[document.writeln(rand(61, 90));]];
           return valueArray
         };
       </script>
